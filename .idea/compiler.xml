@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="king_cloud_api" />
+        <module name="eureka_server7003" />
+        <module name="eureka_server7002" />
+        <module name="dept_provider_8003" />
+        <module name="dept_provider_8002" />
+        <module name="dept_provider_8001" />
+        <module name="dept_consumer_fegin_80" />
+        <module name="dept_consumer_80" />
+        <module name="dept_provider_8001_hystrix" />
+        <module name="cloud-gateway-zuul9527" />
+        <module name="dept_consumer_feign_80" />
+        <module name="eureka_server7001" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

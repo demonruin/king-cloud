@@ -1,0 +1,5 @@
+com/king/mapper/DeptMapper.class
+com/king/contorller/DeptController.class
+com/king/service/impl/DeptServiceImpl.class
+com/king/service/DeptService.class
+com/king/DeptProvider8001_App.class

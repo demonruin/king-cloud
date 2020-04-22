@@ -1,0 +1,31 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zuul-gateway-9527
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      #      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: zuul-gateway9527 #自定义服务名称信息
+    prefer-ip-address:  true  #访问路径可以显示IP地址
+
+  #beforehttp://localhost:9527/microservicecloud-dept/dept/get/2
+zuul:
+  prefix: "/king"  #给服务请求加统一前缀
+  ignored-services: "*"   #忽略所有的微服务
+  #  ignored-services: dept-provider  #忽略单个微服务
+  routes:
+    mydept.serviceId: dept-provider  #一定要注意区分大小写
+    mydept.path: /mydept/**
+#      afterhttp://localhost:9527/mydept/dept/get/1
+
+info:
+  app.name: dept_provider
+  company.name: www.king.com
+  build.artifactId: ${project.artifactId}$
+  build.version: ${project.version}$

@@ -1,0 +1,5 @@
+com/king/mapper/DeptMapper.class
+com/king/DeptProvider8001_hystrix_App.class
+com/king/contorller/DeptController.class
+com/king/service/impl/DeptServiceImpl.class
+com/king/service/DeptService.class
